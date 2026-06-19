@@ -1,0 +1,109 @@
+/* 1. 모든 요소의 기본 마진/패딩 제거 및 박스 크기 계산 방식 변경 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. 텍스트 드래그 방지 (선택 사항) */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 3. 목록(li) 기호 제거 */
+ul, ol {
+    padding: 40px;
+    list-style: "✔️ ";
+}
+
+/* 4. 링크(a) 밑줄 및 기본 색상 제거 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5. 버튼(button) 기본 스타일 초기화 */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* 6. 인풋(input) 및 텍스트에어리어(textarea) 초기화 */
+input, textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* 바이러스 css */
+main{
+    margin: 50px 500px;
+    text-indent: 20px;
+    line-height: 27px;
+}
+
+article{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+h3{
+    text-align: bold;
+    color: #495abb;
+}
+h4{
+    color: #495abb;
+}
+
+.title{
+    padding-bottom: 10px;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+.line{
+    border-top: 2px double #ddd;
+    padding-top: 20px;
+}
+
+.kind{
+    padding-top: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+caption{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    color: #495abb;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 20px;
+    vertical-align: top;
+}
+
+th{
+    font-size: 20px;
+    background-color: #495abb;
+    color: white;
+}
+
+td{
+    text-align: center;
+}
