@@ -1,0 +1,152 @@
+/* 1. 모든 요소의 기본 마진/패딩 제거 및 박스 크기 계산 방식 변경 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. 텍스트 드래그 방지 (선택 사항) */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 3. 목록(li) 기호 제거 */
+ul, ol {
+    list-style: none;
+}
+
+/* 4. 링크(a) 밑줄 및 기본 색상 제거 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5. 버튼(button) 기본 스타일 초기화 */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* 6. 인풋(input) 및 텍스트에어리어(textarea) 초기화 */
+input, textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+main {
+    flex: 1;
+}
+
+.process-container {
+    width: 100%;
+    max-width: 1000px;     /* 전체 메인 폭과 통일 */
+    margin: 60px auto;     /* 위아래 여백을 주고 좌우는 자동으로 가운데 정렬 */
+    padding: 0 20px;
+    text-align: center;    /* 기본 텍스트 정렬을 센터로 */
+    box-sizing: border-box;
+}
+
+/* 2. 섹션 제목 스타일 */
+.process-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0A2540;        /* 메인 브랜드 컬러 */
+    margin-bottom: 45px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+/* 3. 가로 3열 배치를 위한 리스트 컨테이너 (그리드를 활용한 중앙 정렬) */
+.process-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;             /* 카드 사이의 간격 */
+    max-width: 900px;
+    margin: 0 auto;    
+    position: relative;    /* 그리드 박스 자체를 화면 한가운데로 고정 */
+    bottom: -100px;
+}
+
+/* 4. 개별 프로세스 아이템 카드 스타일 */
+.process-item {
+    background-color: #ffffff;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 40px 20px 30px 20px;
+    position: relative;    /* 스텝 숫자의 절대 위치 기준점 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* 내부 요소를 가로축 기준 정중앙 정렬 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 마우스 호버 인터랙션 (취준생 가산점 포인트) */
+.process-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* 5. 좌측 상단 또는 중앙 상단 스텝 숫자 라벨 */
+.step-number {
+    position: absolute;
+    top: -15px;            /* 살짝 위로 걸치게 배치 */
+    left: 50%;
+    transform: translateX(-50%); /* 가로 기준 완벽한 중앙 배치 */
+    background-color: #00D4B2;   /* 강조 민트색 */
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;    /* 동그라미 모양 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 212, 178, 0.3);
+}
+
+/* 6. 이모지 아이콘 박스 스타일 */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #F4F7FA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 28px;
+    line-height: 1;
+}
+
+/* 7. 텍스트 요소 정렬 및 스타일 */
+.step-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    word-break: keep-all;  /* 단어 단위 줄바꿈으로 깔끔하게 */
+}
+
+.step-desc {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+    word-break: keep-all;
+}
+
+
