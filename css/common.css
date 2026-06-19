@@ -1,0 +1,97 @@
+/* 1. 모든 요소의 기본 마진/패딩 제거 및 박스 크기 계산 방식 변경 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. 텍스트 드래그 방지 (선택 사항) */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. 목록(li) 기호 제거 */
+ul, ol {
+    list-style: none;
+}
+
+/* 4. 링크(a) 밑줄 및 기본 색상 제거 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5. 버튼(button) 기본 스타일 초기화 */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* 6. 인풋(input) 및 텍스트에어리어(textarea) 초기화 */
+input, textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.hero {
+    padding: 40px;
+    text-align: center;
+    background-color: #00008B;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.25fr 2fr;
+    flex: 1;
+}
+
+.main-container {
+    padding: 40px;
+}
+
+aside {
+    background-color: #f0f0f0;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+aside nav {
+     display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+aside a {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: gray;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
