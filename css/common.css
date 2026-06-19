@@ -42,7 +42,7 @@ input, textarea {
 }
 
 .hero {
-    padding: 40px;
+    padding: 35px;
     text-align: center;
     background-color: #00008B;
     color: white;
@@ -67,30 +67,33 @@ main {
 }
 
 aside {
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
     padding: 30px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
 
 aside nav {
-     display: flex;
+    display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 30px;
 }
 
-
 aside a {
+    padding: 15px 20px;
+    border-radius: 10px;
     font-size: 1.2rem;
-    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+aside a:hover {
+    background-color: #00008B;
+    color: white;
 }
 
 footer {
-    background-color: gray;
-    padding: 25px;
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
     text-align: center;
     color: white;
     font-size: 1.2rem;
