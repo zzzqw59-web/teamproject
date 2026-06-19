@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. 텍스트 드래그 방지 (선택 사항) */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 3. 목록(li) 기호 제거 */
+ul, ol {
+    list-style: none;
+}
+
+/* 4. 링크(a) 밑줄 및 기본 색상 제거 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5. 버튼(button) 기본 스타일 초기화 */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* 6. 인풋(input) 및 텍스트에어리어(textarea) 초기화 */
+input, textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.evo-img {
+    display: block;
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.evidence{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.evidence-card{
+    width:200px;
+    background:rgb(250, 237, 250);
+    padding:20px;
+    border-radius:15px;
+    border: 2px solid plum;
+
+}
+
+.evidence{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+
+} 

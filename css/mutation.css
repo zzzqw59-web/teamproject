@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. 텍스트 드래그 방지 (선택 사항) */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 3. 목록(li) 기호 제거 */
+ul, ol {
+    list-style: none;
+}
+
+/* 4. 링크(a) 밑줄 및 기본 색상 제거 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5. 버튼(button) 기본 스타일 초기화 */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* 6. 인풋(input) 및 텍스트에어리어(textarea) 초기화 */
+input, textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+body{
+    background-color:#f5f7fa;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    width:1000px;
+    margin:0 auto;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+img{
+    width:100%;
+    border-radius:10px;
+}
+
+.section{
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+.section{
+    border: 2px solid skyblue;
+}
+
+body{
+    background:#eef1f5;
+}
+
+.container{
+    width:80%;
+    max-width:1000px;
+    margin:0 auto;
+    padding:40px 0;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.main-img{
+    display:block;
+    width:500px;
+    max-width:100%;
+    margin:0 auto 30px;
+    border-radius:15px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    border: 3px dotted rgb(236, 151, 179);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.type-wrap{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.type-card{
+    width:250px;
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:12px;
+    border: 2px solid lightsteelblue;
+}
+
+.effect-wrap{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.effect-card{
+    flex:1;
+    min-width:250px;
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:12px;
+    border: 2px solid lightsteelblue;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#f0f0f0;
+}
